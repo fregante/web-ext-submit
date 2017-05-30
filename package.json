@@ -4,10 +4,6 @@
   "description": "Did you mean Mozilla’s 'web-ext'? https://github.com/mozilla/web-ext",
   "keywords": [],
   "bin": "extender.sh",
-  "scripts": {
-    "deprecate-self": "npm deprecate $npm_package_name@\"*\" \"$npm_package_description\"",
-    "postinstall": "printf 'Did you mean Mozilla’s \\033[1;31mweb-ext\\033[0m?\nRun \\033[1;31mnpm install web-ext -g\\033[0m and remove \\033[1;31mwebext\\033[0m\n\\033[1;34mhttps://github.com/mozilla/web-ext\\033[0m\n'"
-  },
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
   "license": "MIT",
   "dependencies": {
