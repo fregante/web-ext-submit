@@ -1,11 +1,20 @@
-#! /bin/sh
+#! /bin/bash
 
+# find location of web-ext (dependency)
+cd "$(dirname "$0")/$(dirname "$(readlink "$0")")" || exit
 PATH=$(npm bin):$PATH
+cd - > /dev/null || exit
 
+# redirect 'submit' to 'sign'+output parsing
 if [ "$1" = 'submit' ]; then
-	set -- "${@:1:2}" "sign" "${@:4}"
-	OK="Your add-on has been submitted for review."
-	web-ext "$@" | sed -n "s/\($OK\).*$/\1/;1,/$OK/p" | perl -pe 'BEGIN {$s=1} END { exit $s } $s=0 if /'"$OK"'/;'
+	set -- "sign" "${@:2}" # https://stackoverflow.com/a/4827707/288906
+	tmp="$(mktemp)"
+	ok="Your add-on has been submitted for review."
+	web-ext "$@" | sed -n "s/\($ok\).*$/\0/;1,/$ok/p" | tee "$tmp"
+	error=${PIPESTATUS[0]}
+	if ! grep -q "$ok" "$tmp" && [ $error = 1 ] ; then
+		exit $error
+	fi
 else
 	web-ext "$@"
 fi
