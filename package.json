@@ -1,6 +1,6 @@
 {
   "name": "webext",
-  "version": "1.0.0",
+  "version": "1.9.1-with-submit.0",
   "description": "Did you mean Mozilla’s 'web-ext'? https://github.com/mozilla/web-ext",
   "keywords": [],
   "bin": "extender.sh",
