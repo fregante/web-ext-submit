@@ -2,6 +2,7 @@
   "name": "web-ext-submit",
   "version": "2.9.2",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
+  "repository": "bfred-it/web-ext-submit",
   "keywords": [
     "amo",
     "upload",
