@@ -1,12 +1,21 @@
 {
-  "name": "webext",
+  "name": "web-ext-submit",
   "version": "1.9.1-with-submit.1",
-  "description": "Did you mean Mozilla’s 'web-ext'? https://github.com/mozilla/web-ext",
-  "keywords": [],
+  "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
+  "keywords": [
+    "amo",
+    "upload",
+    "zip",
+    "webext",
+    "web extension",
+    "addon",
+    "add-on",
+    "mozilla"
+  ],
   "bin": "extender.sh",
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "dependencies": {
-    "web-ext": "^1.9.1"
+    "web-ext": "^2.9.2"
   }
 }
