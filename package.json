@@ -17,6 +17,6 @@
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
   "license": "MPL-2.0",
   "dependencies": {
-    "web-ext": "^2.9.2"
+    "web-ext": "^2.9.3"
   }
 }
