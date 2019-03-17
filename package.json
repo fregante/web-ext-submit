@@ -3,9 +3,15 @@
   "version": "2.9.3",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
   "repository": "bfred-it/web-ext-submit",
+  "engines": {
+    "node": ">=8.0.0",
+    "npm": ">=5.0.0"
+  },
+  "engine-strict": true,
   "keywords": [
     "amo",
     "upload",
+    "send",
     "zip",
     "webext",
     "web extension",
@@ -17,6 +23,6 @@
   "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
   "license": "MPL-2.0",
   "dependencies": {
-    "web-ext": "^2.9.3"
+    "web-ext": "^3.0.0"
   }
 }
