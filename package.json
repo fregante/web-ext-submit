@@ -2,27 +2,27 @@
   "name": "web-ext-submit",
   "version": "3.1.0",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
+  "keywords": [
+    "add-on",
+    "addon",
+    "amo",
+    "mozilla",
+    "send",
+    "upload",
+    "web extension",
+    "webext",
+    "zip"
+  ],
   "repository": "bfred-it/web-ext-submit",
+  "license": "MPL-2.0",
+  "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
+  "bin": "extender.sh",
+  "dependencies": {
+    "web-ext": "^3.1.0"
+  },
   "engines": {
     "node": ">=8.0.0",
     "npm": ">=5.0.0"
   },
-  "engine-strict": true,
-  "keywords": [
-    "amo",
-    "upload",
-    "send",
-    "zip",
-    "webext",
-    "web extension",
-    "addon",
-    "add-on",
-    "mozilla"
-  ],
-  "bin": "extender.sh",
-  "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
-  "license": "MPL-2.0",
-  "dependencies": {
-    "web-ext": "^3.1.0"
-  }
+  "engine-strict": true
 }
