@@ -1,6 +1,6 @@
 {
   "name": "web-ext-submit",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
   "keywords": [
     "add-on",
