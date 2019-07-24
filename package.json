@@ -13,9 +13,9 @@
     "webext",
     "zip"
   ],
-  "repository": "bfred-it/web-ext-submit",
+  "repository": "fregante/web-ext-submit",
   "license": "MPL-2.0",
-  "author": "Federico Brigante <npm@bfred.it> (https://twitter.com/bfred_it)",
+  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "bin": "extender.sh",
   "dependencies": {
     "web-ext": "^3.1.1"

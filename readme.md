@@ -33,11 +33,11 @@ web-ext-submit --api-key=blahbla --api-secret=blahla
 ## Related
 
 * [`mozilla/web-ext`](https://github.com/mozilla/web-ext): A command line tool to help build, run, and test web extensions.
-* [`webext-dynamic-content-scripts`](https://github.com/bfred-it/webext-dynamic-content-scripts): Automatically inject your `content_scripts` on custom domains.
-* [`webext-content-script-ping`](https://github.com/bfred-it/webext-content-script-ping): One-file interface to detect whether your content scripts have loaded.
-* [`webext-options-sync`](https://github.com/bfred-it/webext-options-sync): Helps you manage and autosave your extension's options.
-* [`Awesome WebExtensions`](https://github.com/bfred-it/Awesome-WebExtensions): A curated list of awesome resources for Web Extensions development.
+* [`webext-dynamic-content-scripts`](https://github.com/fregante/webext-dynamic-content-scripts): Automatically inject your `content_scripts` on custom domains.
+* [`webext-content-script-ping`](https://github.com/fregante/webext-content-script-ping): One-file interface to detect whether your content scripts have loaded.
+* [`webext-options-sync`](https://github.com/fregante/webext-options-sync): Helps you manage and autosave your extension's options.
+* [`Awesome WebExtensions`](https://github.com/fregante/Awesome-WebExtensions): A curated list of awesome resources for Web Extensions development.
 
 ## License
 
-MPL-2.0 © Federico Brigante — [Twitter](http://twitter.com/bfred_it)
+MPL-2.0 © [Federico Brigante](https://bfred.it)
