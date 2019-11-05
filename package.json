@@ -18,7 +18,7 @@
   "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "bin": "extender.sh",
   "dependencies": {
-    "web-ext": "^3.2.0"
+    "web-ext": "^3.2.1"
   },
   "engines": {
     "node": ">=8.0.0",
