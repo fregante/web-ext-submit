@@ -17,6 +17,9 @@
   "license": "MPL-2.0",
   "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
   "bin": "extender.sh",
+  "scripts": {
+    "version": "dot-json package.json dependencies.web-ext \"^$npm_package_version\""
+  },
   "dependencies": {
     "web-ext": "^4.0.0"
   },
