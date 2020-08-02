@@ -21,7 +21,7 @@ npm install web-ext-submit
 - grep
 - tee
 
-Tested on OS X and travis/linux, they include all of them by default.
+Tested on Travis and GitHub Actions, they include all of them by default.
 
 ## Usage
 
