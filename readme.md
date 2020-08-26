@@ -4,7 +4,7 @@
 
 Mozilla’s `web-ext sign` successfully submits an extension for review, but then it throws an error. This wrapper executes the same command, but then it prevents the unrelated ["_it could not be signed_"](https://github.com/mozilla/web-ext/issues/804#issuecomment-302588357) error.
 
-This package will only live for as long as `web-ext` natively supports this. Follow [mozilla/web-ext#804](https://github.com/mozilla/web-ext/issues/804)
+This package will only live until `web-ext` natively supports this. Follow [mozilla/web-ext#804](https://github.com/mozilla/web-ext/issues/804)
 
 Used on https://github.com/sindresorhus/refined-github/
 
