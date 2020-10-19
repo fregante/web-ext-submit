@@ -1,0 +1,25 @@
+name: Update
+
+on:
+  push:
+  schedule:
+    - cron: '10 10 */2 * *'
+
+jobs:
+  check-and-update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: fregante/setup-git-token@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      - run: |
+          THIS=$(npm info . version)
+          UPSTREAM=$(npm info web-ext version)
+          if [ "$THIS" != "$UPSTREAM" ]; then
+            npm version "$UPSTREAM"
+            npm publish
+            git push --follow-tags
+          fi
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
