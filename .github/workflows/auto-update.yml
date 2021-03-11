@@ -12,6 +12,7 @@ jobs:
       - uses: fregante/setup-git-user@v1
       - name: Try updating the version
         run: |
+          npm publish || true # Try publishing the version in git, in case it was manually changed
           if npm version $(npm info web-ext version); then
             npm config set '//registry.npmjs.org/:_authToken' "${{ secrets.NPM_TOKEN }}"
             npm publish
