@@ -1,6 +1,6 @@
 {
   "name": "web-ext-submit",
-  "version": "6.8.0",
+  "version": "7.0.0",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
   "keywords": [
     "add-on",
@@ -21,7 +21,7 @@
     "version": "npx dot-json package.json dependencies.web-ext \"^$npm_package_version\""
   },
   "dependencies": {
-    "web-ext": "^6.8.0"
+    "web-ext": "^7.0.0"
   },
   "engines": {
     "node": ">=12.0.0",
