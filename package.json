@@ -1,6 +1,6 @@
 {
   "name": "web-ext-submit",
-  "version": "7.5.0",
+  "version": "7.5.0.1",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
   "keywords": [
     "add-on",
@@ -15,16 +15,16 @@
   ],
   "repository": "fregante/web-ext-submit",
   "license": "MPL-2.0",
-  "author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
+  "author": "Federico Brigante <me@fregante.com> (https://fregante.com)",
   "bin": "extender.sh",
   "scripts": {
-    "version": "npx dot-json package.json dependencies.web-ext \"^$npm_package_version\""
+    "version": "bash ./bump-version.sh"
   },
   "dependencies": {
     "web-ext": "^7.5.0"
   },
   "engines": {
-    "node": ">=12.0.0",
+    "node": ">=14.0.0",
     "npm": ">=6.9.0"
   },
   "engine-strict": true

@@ -49,4 +49,4 @@ web-ext-submit --api-key=blahbla --api-secret=blahla
 
 ## License
 
-MPL-2.0 © [Federico Brigante](https://bfred.it)
+MPL-2.0 © [Federico Brigante](https://fregante.com)
