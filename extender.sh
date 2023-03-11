@@ -9,8 +9,14 @@ cd - > /dev/null || exit
 set -- "sign" "${@:1}" # https://stackoverflow.com/a/4827707/288906
 tmp="$(mktemp)"
 ok="Your add-on has been submitted for review."
-web-ext "$@" | sed -n "s/\($ok\).*$/\0/;1,/$ok/p" | tee "$tmp"
+# chop off everything after "$ok" (it contains distracting stacktrace)
+web-ext "$@" | sed "/$ok/q" | tee "$tmp"
 error=${PIPESTATUS[0]}
+# pass other errors intact
+if [ $error != 1 ] ; then
+	exit $error
+fi
+# defensive if add-on was submitted
 if ! grep -q "$ok" "$tmp" && [ $error = 1 ] ; then
 	exit $error
 fi
