@@ -1,4 +1,4 @@
 #!/bin/bash
-npx dot-json package.json dependencies.web-ext "^$npm_package_version"
-npx dot-json package.json engines.node "$(npm info web-ext engines.node)"
-npx dot-json package.json engines.npm "$(npm info web-ext engines.npm)"
+npm pkg set dependencies.web-ext="^$npm_package_version"
+npm pkg set engines.node="$(npm info web-ext engines.node)"
+npm pkg set engines.npm="$(npm info web-ext engines.npm)"
