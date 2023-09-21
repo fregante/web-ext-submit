@@ -1,6 +1,6 @@
 {
   "name": "web-ext-submit",
-  "version": "7.6.2",
+  "version": "7.7.0",
   "description": "Wrapper around Mozilla’s web-ext to submit extensions to AMO.",
   "keywords": [
     "add-on",
@@ -21,7 +21,7 @@
     "version": "bash ./bump-version.sh"
   },
   "dependencies": {
-    "web-ext": "^7.6.2"
+    "web-ext": "^7.7.0"
   },
   "engines": {
     "node": ">=14.0.0",
