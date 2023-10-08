@@ -1,3 +1,22 @@
+# Deprecated
+
+web-ext now natively supports addon submissions without error starting in 7.3.0. The usage is similar, replace:
+
+```sh
+export WEB_EXT_API_KEY=blahla
+export WEB_EXT_API_SECRET=blahla
+web-ext-submit
+```
+
+with
+
+```sh
+export WEB_EXT_API_KEY=blahla
+export WEB_EXT_API_SECRET=blahla
+web-ext sign --use-submission-api --channel listed
+```
+
+
 # web-ext-submit [![npm version](https://img.shields.io/npm/v/web-ext-submit.svg)](https://www.npmjs.com/package/web-ext-submit)
 
 > Wrapper around Mozilla’s web-ext to submit extensions to AMO.
